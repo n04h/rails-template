@@ -1,9 +1,10 @@
 # rails-template
 
-## Enviroments
+## Environments
 
-Ruby: 3.1.2
-Rails: 7.0.4
+- Ruby: 3.1.2
+- Rails: 7.0.4
+- MySQL: 8.0.31
 
 ## Setup
 
