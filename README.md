@@ -19,3 +19,14 @@ rails db:setup
 
 - Ruby: <https://github.com/cookpad/styleguide/blob/master/ruby.ja.md>
 - Rspec: <https://github.com/willnet/rspec-style-guide>
+
+## Commands
+
+```console
+# Test (Rspec)
+bundle exec rspec
+
+# Lint (Rubocop)
+bundle exec rubocop
+bundle exec rubocop -a # Auto fix
+```
