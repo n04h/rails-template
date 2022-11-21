@@ -40,4 +40,9 @@ group :test do
 
   # Rspec
   gem "rspec-rails", "~> 6.0.0"
+
+  # Rubocop
+  gem "rubocop", require: false
+  gem "rubocop-rails", require: false
+  gem "rubocop-rspec", require: false
 end
