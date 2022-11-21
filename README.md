@@ -14,3 +14,8 @@ docker compose up
 docker compose exec app sh
 rails db:setup
 ```
+
+## Style guide
+
+- Ruby: <https://github.com/cookpad/styleguide/blob/master/ruby.ja.md>
+- Rspec: <https://github.com/willnet/rspec-style-guide>
