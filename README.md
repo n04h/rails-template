@@ -10,16 +10,20 @@
 
 ```console
 cp .env.example .env
+rm config/credentials.yml.enc
 
 docker compose build
 docker compose run app sh
 
-rm config/credentials.yml.enc # on app container
-EDITOR=vi rails credentials:edit # on app container
+# on app container
+EDITOR=vi rails credentials:edit
+exit
 
 docker compose up
 docker compose exec app sh
-rails db:setup # on app container
+
+# on app container
+rails db:setup
 ```
 
 ## Style guide
