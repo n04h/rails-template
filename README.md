@@ -9,6 +9,8 @@
 ## Setup
 
 ```console
+cp .env.example .env
+
 docker compose build
 docker compose run app sh
 
