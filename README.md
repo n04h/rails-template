@@ -10,9 +10,14 @@
 
 ```console
 docker compose build
+docker compose run app sh
+
+rm config/credentials.yml.enc # on app container
+EDITOR=vi rails credentials:edit # on app container
+
 docker compose up
 docker compose exec app sh
-rails db:setup
+rails db:setup # on app container
 ```
 
 ## Style guide
