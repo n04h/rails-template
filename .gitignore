@@ -36,3 +36,7 @@
 
 # Env file.
 /.env
+
+# Docker
+/docker/volumes/mysql/*
+!/docker/volumes/mysql/.keep
