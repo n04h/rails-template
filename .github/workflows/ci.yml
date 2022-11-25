@@ -2,6 +2,10 @@ name: ci
 
 on: push
 
+env:
+  RAILS_ENV: test
+  DB_HOST: 127.0.0.1
+
 jobs:
   rubocop:
     runs-on: ubuntu-latest
@@ -22,7 +26,7 @@ jobs:
         ports:
           - 3306:3306
         env:
-          MYSQL_ALLOW_EMPTY_PASSWORD: yes
+          MYSQL_ROOT_PASSWORD: secret
         options: --health-cmd "mysqladmin ping" --health-interval 10s --health-timeout 5s --health-retries 10
     steps:
       - uses: actions/checkout@v2
@@ -35,6 +39,6 @@ jobs:
           gem install bundler
           bundle install --jobs 4 --retry 3 --path vendor/bundle
       - name: Database create and migrate
-        run: bundle exec rails db:setup RAILS_ENV=test
+        run: bundle exec rails db:setup
       - name: Run rspec
         run: bundle exec rspec
