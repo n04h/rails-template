@@ -5,6 +5,7 @@
 - Ruby: 3.1.2
 - Rails: 7.0.4
 - MySQL: 8.0.31
+- Redis: 7.0.x
 
 ## Setup
 

@@ -27,7 +27,7 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'bootsnap', require: false
 
 # Redis
-gem 'redis-actionpack', '~> 5.3.0' # セッションストアでRedisを使用する
+gem 'redis-actionpack', '~> 5.3.0' # セッションストア用のRedis
 
 group :test do
   gem 'capybara'

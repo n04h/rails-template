@@ -3,6 +3,8 @@
 class RootController < ApplicationController
   def index
     @test = session[:test]
-    session[:test] = 'hoge'
+    session[:test] = SecureRandom.uuid
+
+    session
   end
 end
