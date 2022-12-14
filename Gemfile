@@ -26,6 +26,9 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
 
+# Redis
+gem 'redis-actionpack', '~> 5.3.0' # セッションストアでRedisを使用する
+
 group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
