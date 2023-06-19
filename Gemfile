@@ -35,7 +35,7 @@ group :test do
   gem 'webdrivers'
 
   # Rspec
-  gem 'rspec-rails', '~> 6.0.0'
+  gem 'rspec-rails', '~> 6.0.3'
 
   # Rubocop
   gem 'rubocop', require: false
